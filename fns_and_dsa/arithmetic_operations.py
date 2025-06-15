@@ -12,7 +12,7 @@ def perform_operation(num1: float, num2: float, operation: str):
                print("Erro: Division by zero!")
      else:
           print("Invalid operation! Please choose from add, subtract, multiply, or divide.")
-          return None
+     
 
 
          
