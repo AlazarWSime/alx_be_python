@@ -6,11 +6,12 @@ def perform_operation(num1, num2, operation):
     elif operation == "multiply":
         return num1 * num2
     elif operation == "divide":
-        if num2 != 0:
-            return num1 / num2
-        else:
+        if num2 == 0:
             print("Error: Division by zero!")
-            return None
+         
+        else:
+            return num1 / num2
+        
     else:
         print("Invalid operation! Please choose from add, subtract, multiply, or divide.")
         return None
