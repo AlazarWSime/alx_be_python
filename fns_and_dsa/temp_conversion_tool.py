@@ -18,7 +18,7 @@ def main():
     elif temperature_type == 'C':
         print(f"Converted temperature: {convert_to_fahrenheit(temperature):.2f}°F")
     else:
-        print("Invalid temperature type. Please enter 'C' or 'F'.")
+        print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
