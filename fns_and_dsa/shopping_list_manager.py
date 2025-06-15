@@ -11,23 +11,23 @@ def main():
                       
     while True:
         display_menu()
-        choice = input("Enter your choice input as a number: ")
+        choice = int(input("Enter your number(1 - 4): "))
 
-        if choice == '1':
+        if choice == 1:
            item = input("what item do you want to add: ")
            shopping_list.append(item) 
            pass
-        elif choice == '2':
+        elif choice == 2:
            item = input("what item do you want to remove: ")
            if item in shopping_list:
                   shopping_list.remove(item)
            else:
                print("The item you want to remove doesn't exist in your shopping list!")
            pass
-        elif choice == '3':
+        elif choice == 3:
             print(f"Your shoping List is: {shopping_list}")
             pass
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
