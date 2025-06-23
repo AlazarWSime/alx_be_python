@@ -7,7 +7,8 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError
         else:
             result = numerator/denominator
-            return(result)
+            print(f"The result of the division is {result}")
+            return result
     except ValueError as e:
         print("Error: Please enter numeric values only.")    
     except ZeroDivisionError as e:
